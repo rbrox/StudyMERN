@@ -47,3 +47,9 @@ Interpreted languages are languages that are not compiled. They are executed lin
 
 # 1.2 | Why Js >> Other languages
 - Js is the only language that can run on the browser.
+- Js has been standardized by ECMA (European Computer Manufacturers Association), hence we are stuck with it.
+- Js doesent have strict types, hence it is easy to learn.
+
+- `IMP`: Runtime Error: Refers to errors that occur while a program is running. These errors are usually caused by something the programmer did wrong, such as forgetting to initialize an object before accessing it, Or when you are arbitrairily changing the type of a variable.
+[Motivation for `Typescript`](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+![Alt text](image-4.png)
