@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<head>
+
+    <title>Week 1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <input type="number" id="hour" placeholder="7">
+    <button id="greet">Greet</button>
+
+    <script>
+        function time(hour){
+            if (hour > 6 && hour < 12){
+                alert('Good Morning!'); 
+            }
+            else if(hour > 13 && hour < 17 ){
+                alert('Good Afternoon');
+            }
+            else{
+                alert('Good Night');
+            }
+        }
+        
+        let greet = document.getElementById('greet');
+        greet.addEventListener('click', function(){
+            
+            let hour = document.getElementById('hour');
+            let hour_num = parseInt(hour.value);
+            
+            time(hour_num);
+        })
+
+        
+    </script>
+</body>

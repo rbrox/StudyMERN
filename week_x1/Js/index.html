@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<head>
+
+    <title>Week 1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <button name="Hover" id="disp">Display!</button>
+    <button name="Hover" id="rock">Rock</button>
+    <button name="Hover" id="paper">Paper</button>
+    <button name="Hover" id="sissors">Sissors</button>
+	
+
+    <script>
+        function getComputer(){
+            arr = ['Rock', 'Paper', 'Sissors'];
+            var index = Math.floor(Math.random() * arr.length);
+            return arr[index];
+        }
+        
+        function play(move){
+            comp_move = getComputer()
+
+            if (move !== comp_move){
+                if (move === 'Rock'){
+                    if (comp_move === 'Paper'){
+                    return -1    
+                    }
+                    else
+                        return 1
+                }
+
+                if (move === 'Sissors'){
+                    if (comp_move === 'Paper'){
+                    return 1    
+                    }
+                    else
+                        return -1
+                }
+
+                if (move === 'Paper'){
+                    if (comp_move === 'Rock'){
+                    return 1    
+                    }
+                    else
+                        return -1
+                }
+
+            }
+        }
+
+        
+        alert("Reloaded!")
+        let score_mine = 0;
+        let score_comp = 0;
+        
+
+
+        
+        let rock = document.getElementById("rock");
+        rock.addEventListener('click', function(){
+            score = play("Rock");
+            if (score === 1)
+                ++score_mine;
+            else
+                ++score_comp; 
+            console.log("Current Score:", score_mine, " Comp:", score_comp);
+        })
+
+        let paper = document.getElementById("paper");
+        paper.addEventListener('click', function(){
+            score = play("Papper");
+            if (score === 1)
+                ++score_mine;
+            else
+                ++score_comp; 
+            console.log("Current Score:", score_mine, " Comp:", score_comp);
+        })
+                let sissors = document.getElementById("sissors");
+        sissors.addEventListener('click', function(){
+            score = play("Sissors");
+            if (score === 1)
+                ++score_mine;
+            else
+                ++score_comp; 
+            console.log("Current Score:", score_mine, " Comp:", score_comp);
+        })
+    </script>
+</body>
