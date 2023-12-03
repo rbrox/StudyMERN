@@ -50,6 +50,39 @@ Interpreted languages are languages that are not compiled. They are executed lin
 - Js has been standardized by ECMA (European Computer Manufacturers Association), hence we are stuck with it.
 - Js doesent have strict types, hence it is easy to learn.
 
+# 1.3 | Strict vs Dynamic Languages
 - `IMP`: Runtime Error: Refers to errors that occur while a program is running. These errors are usually caused by something the programmer did wrong, such as forgetting to initialize an object before accessing it, Or when you are arbitrairily changing the type of a variable.
 [Motivation for `Typescript`](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 ![Alt text](image-4.png)
+
+# 1.4 | Single threaded nature of JS
+The number of threads in a program determines the number of tasks that can be executed at the same time. A single-threaded program can only execute one task at a time. A multi-threaded program can execute multiple tasks at the same time.
+![Alt text](image-5.png)
+
+- too See: [Cluster Module](https://nodejs.org/api/cluster.html)
+
+# 1.5 | Simple Primitives in JS
+![Alt text](image-6.png)
+
+- [Greet](greet.js)
+- [Greet_2](greet2.js)
+- [Count](count.js)
+    ```
+    for (let i = 0; i < 1000; ++i){
+    console.log(i);
+    }
+    ```
+- [Guess](guess.js)
+- 
+
+### 1.5.1 | `Objects`:
+
+```
+const person = {
+    name: "Harkirat",
+    age: 21,
+    greet: function(){
+        console.log("Hello");
+    }
+}
+```
