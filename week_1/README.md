@@ -86,3 +86,10 @@ const person = {
     }
 }
 ```
+
+## 1.6 | `Functions`:
+
+### 1.6.1 | `Function taking a function as an argument`:
+
+Callback: A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’.
+
