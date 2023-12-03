@@ -31,3 +31,19 @@ Interpreted languages are languages that are not compiled. They are executed lin
 ![Alt text](image-3.png)
 
 - Line by line execution conversion takes place in `Interpreted languages`.
+
+### 1.1.1 | `Interpreted languages` | Js Hands on :
+
+- Harkirat makes us code a Js file and run it in the terminal.
+- Discussed `partial execution` of Js file (When it has errors).
+    ```
+    [JavaScript]
+
+    console.log("Hello World");
+    console.log(a);
+    ```
+- [Hands On JS File](hands_on.js)
+
+
+# 1.2 | Why Js >> Other languages
+- Js is the only language that can run on the browser.
